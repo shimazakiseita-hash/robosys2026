@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 import sys
 
-ans = 0.0
+x = 0
 for line in sys.stdin:
-    ans += float(line)
+    try:
+        x += int(line) 
+    except ValueError:
+        x += float(line)
 
-print(ans)
+print(x)
