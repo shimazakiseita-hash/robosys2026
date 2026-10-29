@@ -11,9 +11,8 @@ def tonum(s):
     except:
         return float(s)
 
-
-ans = 0
+x = 0
 for line in sys.stdin:
-    ans += tonum(line.rstrip())
+    x += tonum(line.rstrip())
 
-print(ans)
+print(x)
