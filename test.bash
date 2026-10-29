@@ -11,6 +11,7 @@ res=0
 
 ### NORMAL INPUT ###
 out=$(seq 5 | ./plus)
+[ "$?" = 0 ]      || ng "$LINENO"
 [ "${out}" = 15 ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
